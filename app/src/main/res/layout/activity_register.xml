@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.grizzly.praktikumandroid2.Register">
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+    <CheckBox
+        android:id="@+id/cb_web_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web Developer"/>
+    <CheckBox
+        android:id="@+id/cb_mobile_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Developer"/>
+    <RadioGroup
+        android:id="@+id/rg_rumpun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_rpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rumpun RPL"/>
+        <RadioButton
+            android:id="@+id/rb_si"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rumpun SI"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="submit"/>
+
+
+</LinearLayout>
